@@ -1,0 +1,168 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fffdf4;
+    font-family: 'Poppins', sans-serif;
+}
+.featured-collection {
+    width: 1530px;
+    margin: 70px auto;
+}
+
+.featured-collection .featured-collection__header {
+    width: 520px;
+}
+
+.featured-collection .featured-collection__header .title {
+    font-size: 45px;
+    color: #374639;
+    font-weight: 400;
+}
+
+.featured-collection .featured-collection__header .subtitle {
+    font-size: 19px;
+    color: #3f514b;
+    font-weight: 400;
+}
+.featured-collection .featured-collection__list {
+    width: 1530px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.featured-collection .featured-collection__list .item {
+    width: 365px;
+    margin-right: 23px;
+    margin-bottom: 40px;
+}
+.featured-collection .featured-collection__list .item:nth-child(4n + 0) {
+    margin-right: 0;
+}
+.featured-collection .featured-collection__list .item .title {
+    font-size: 20px;
+    color: #414f42;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.featured-collection .featured-collection__list .item .subtitle {
+    font-size: 17px;
+    color: #3f514b;
+    margin-top: 6px;
+}
+
+.featured-collection .featured-collection__list .item .price {
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.featured-collection .featured-collection__list .item .price .old {
+    font-size: 13px;
+    color: #72776c;
+    text-decoration: line-through;
+}
+.featured-collection .featured-collection__list .item .price .current {
+    font-size: 18px;
+    color: #3f514b;
+}
+
+.featured-collection .featured-collection__list .item .roadmap ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.featured-collection .featured-collection__list .item .roadmap ul li {
+    list-style: none;
+    font-size: 15px;
+    display: inline-block;
+    padding: 12px 0;
+    border-top: 1px solid #ecedec;
+    width: 100%;
+}
+.featured-collection .featured-collection__list .item .roadmap ul li:last-child {
+    border-bottom: 1px solid #ecedec;
+}
+.featured-collection .featured-collection__list .item .roadmap ul li span {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1600px) {
+    .featured-collection {
+        width: 90vw;
+    }
+
+    .featured-collection .featured-collection__list {
+        width: 90vw;
+    }
+    .featured-collection .featured-collection__list .item {
+        width: calc(100% / 4 - 15px);
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .featured-collection {
+        width: 90vw;
+    }
+    .featured-collection .featured-collection__list {
+        width: 90vw;
+    }
+    .featured-collection .featured-collection__list .item {
+        width: calc(100% / 3 - 15px);
+        margin-right: 20px;
+    }
+    .featured-collection .featured-collection__list .item:nth-child(4n + 0) {
+        margin-right: 20px;
+    }
+    .featured-collection .featured-collection__list .item:nth-child(3n + 0) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .featured-collection {
+        width: 90vw;
+    }
+
+    .featured-collection .featured-collection__header {
+        width: 100%;
+        max-width: 520px;
+    }
+    .featured-collection .featured-collection__list {
+        width: 90vw;
+    }
+    .featured-collection .featured-collection__list .item {
+        width: calc(100% / 2 - 10px);
+        margin-right: 20px;
+    }
+
+    .featured-collection .featured-collection__list .item:nth-child(4n + 0) {
+        margin-right: 0;
+    }
+    .featured-collection .featured-collection__list .item:nth-child(3n + 0) {
+        margin-right: 0;
+    }
+
+    .featured-collection .featured-collection__list .item:nth-child(1n + 0) {
+        margin-right: 20px;
+    }
+    .featured-collection .featured-collection__list .item:nth-child(2n + 0) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 479.9px) {
+    .featured-collection .featured-collection__list {
+        width: 90vw;
+    }
+    .featured-collection .featured-collection__list .item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .featured-collection .featured-collection__list .item:nth-child(1n + 0) {
+        margin-right: 0;
+    }
+}

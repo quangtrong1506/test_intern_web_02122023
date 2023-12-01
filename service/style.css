@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.service .service__header {
+    margin: 66px auto;
+    font-size: 58px;
+    text-align: center;
+}
+.service .service__content {
+    margin: 76px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.service .service__content .start {
+    width: 560px;
+    margin-right: 117px;
+    margin-top: 54px;
+}
+.service .service__content .end {
+    width: 706px;
+}
+
+.service .service__content .dropdown {
+    margin-top: 24px;
+}
+.service .service__content .dropdown .dropdown-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #f3eae5;
+}
+.service .service__content .dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.service .service__content .dropdown .dropdown-item .title {
+    font-size: 26px;
+    display: flex;
+}
+.service .service__content .dropdown .dropdown-item .title .text {
+    flex: 1;
+}
+.service .service__content .dropdown .dropdown-item .title .icon {
+    width: 24px;
+    height: 24px;
+}
+.service .service__content .dropdown .dropdown-item .content {
+    font-size: 15px;
+    width: 499px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 0.5s ease-out;
+}
+.service .service__content .dropdown .dropdown-item.show .content {
+    max-height: 200px;
+    transition: all 0.5s linear;
+}
+.service .service__content .dropdown .dropdown-item .content p {
+    margin: 16px 0 6px 0;
+}
+@media (max-width: 1600px) {
+    .service .service__content {
+        width: 90vw;
+    }
+    .service .service__content .start {
+        width: 40%;
+        margin-right: 5%;
+    }
+    .service .service__content .end {
+        width: 55%;
+    }
+    .service .service__content .dropdown .dropdown-item .content {
+        width: auto;
+        max-width: calc(100% - 30px);
+    }
+}
+@media (max-width: 767.9px) {
+    .service .service__header {
+        margin: 30px auto;
+    }
+    .service .service__content {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .service .service__content .start {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .service .service__content .end {
+        width: 100%;
+        margin-top: 40px;
+    }
+}

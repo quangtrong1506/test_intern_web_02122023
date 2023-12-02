@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     font-weight: 400;
+    background-color: #fff9f5;
 }
 
 .service .service__header {
